@@ -1,10 +1,15 @@
 #!/usr/bin/env ruby
 
-# this is a very basic (and slow) implemetnation
+# an iterative implementation
 
 def fibonacci(v)
-  return v if v < 2
-  return fibonacci(v-1) + fibonacci(v-2)
+  a = []
+  a[0] = 0
+  a[1] = 1
+  2.upto(v) do |x|
+    a << a[x-1] + a[x-2]
+  end
+  return a[v]
 end
 
 def main
