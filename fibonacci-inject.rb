@@ -1,5 +1,8 @@
 #!/usr/bin/env ruby
 
+# this implementation uses ruby's Enumerable.inject.
+# this supports a memo, and as such, is much faster than the basic implementation.
+
 count = (ARGV.last || 31).to_i
 
 count.times do |x|

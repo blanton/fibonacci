@@ -1,5 +1,8 @@
 #!/usr/bin/env ruby
 
+# this implementation uses a separate class.
+# supporting a memo, it is much faster than the basic implementation.
+
 class Fibonacci
 
   def initialize
