@@ -20,7 +20,9 @@ end
 def main
   fibonacci = Fibonacci.new
 
-  31.times do |x|
+  count = (ARGV.last || 31).to_i
+
+  count.times do |x|
     val = fibonacci[x]
     puts "#{x}: #{val}"
   end

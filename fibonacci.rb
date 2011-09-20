@@ -6,7 +6,9 @@ def fibonacci(v)
   return fibonacci(v-1) + fibonacci(v-2)
 end
 
-31.times do |x|
+count = (ARGV.last || 31).to_i
+
+count.times do |x|
   val = fibonacci(x)
   puts "#{x}: #{val}"
 end
